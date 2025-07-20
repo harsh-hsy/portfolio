@@ -1,249 +1,350 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harsh Singh Portfolio</title>
-  
-  <!-- External Stylesheets -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="assets/assetsIndex/cssIndex/style.css">
-  <link rel="stylesheet" href="assets/assetsIndex/cssIndex/header.css">
-  <link rel="stylesheet" href="assets/assetsIndex/cssIndex/home.css">
-  <link rel="stylesheet" href="assets/assetsIndex/cssIndex/about.css">
-  <link rel="stylesheet" href="assets/assetsIndex/cssIndex/skills.css">
-  <link rel="stylesheet" href="assets/assetsIndex/cssIndex/projects.css">
-  <link rel="stylesheet" href="assets/assetsIndex/cssIndex/contact.css">
-  <link rel="stylesheet" href="assets/assetsIndex/cssIndex/footer.css">
-  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harsh Singh Portfolio</title>
 
-  <!-- Navigation -->
-  <header>
-    <div class="header-list">
-      <div class="header-list-text">
-        <p>Harsh Singh</p>
-      </div>
-
-      <!-- Hamburger Menu -->
-      <label class="hamburger">
-        <input type="checkbox" id="menu-toggle">
-        <svg viewBox="0 0 32 32">
-          <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-          <path class="line" d="M7 16 27 16"></path>
-        </svg>
-      </label>
-      
-
-      <!-- Navigation Links -->
-      <ul class="header-list-link">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <!-- Home Section -->
-  <section id="home" class="home">
-    <div class="home-image-up">
-      <div class="home-image-bg-up">
-        <img src="assets/assetsIndex/imagesIndex/homeImage.png" class="my-image" alt="Harsh's Picture">
-      </div>
-    </div>
-    <div class="home-text">
-      <div class="home-intro">
-        <p>Hi, I'm <span>Harsh</span>.</p>
-        <p><span id="typing-effect"></span></p> <!-- Typing effect -->
-      </div>
-      <div class="contact-button"><a href="#contact">Contact</a></div>
-      <div class="home-social">
-        <a href="https://github.com/codewithharshsingh" class="home-social-icon"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/harsh-hsy/" class="home-social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="mailto:mr.harshsingh.contact@gmail.com" class="home-social-icon"><i class="fa-solid fa-envelope"></i></a>
-      </div>
-    </div>
-    <div class="home-image">
-      <div class="home-image-bg">
-        <img src="assets/assetsIndex/imagesIndex/homeImage.png" alt="Harsh's Picture">
-      </div>
-    </div>
-  </section>
-
-  <!-- About sections -->
-
-  <section id="about" class="about">
-    <div class="about-heading">
-      <h2>About</h2>
-    </div>
-
-    <div class="about-container">
-      <div class="about-image">
-        <img src="assets/assetsIndex/imagesIndex/aboutImage.jpg" alt="Harsh's Picture">
-      </div>
-
-      <div class="about-text">
-
-        <div class="about-paragraph">
-          <p>I’m <span>Harsh Singh</span>, a dedicated <span>Front-End Developer</span>, <span>Web Designer</span> & <span>Video Editor</span>with a passion for crafting visually compelling and highly functional web experiences. With expertise in HTML, CSS, JavaScript, and modern UI/UX principles, I specialize in building responsive, intuitive, and aesthetically refined digital solutions.</p>
+    <!-- External Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/assetsIndex/cssIndex/style.css" />
+    <link rel="stylesheet" href="assets/assetsIndex/cssIndex/header.css" />
+    <link rel="stylesheet" href="assets/assetsIndex/cssIndex/home.css" />
+    <link rel="stylesheet" href="assets/assetsIndex/cssIndex/about.css" />
+    <link rel="stylesheet" href="assets/assetsIndex/cssIndex/skills.css" />
+    <link rel="stylesheet" href="assets/assetsIndex/cssIndex/projects.css" />
+    <link rel="stylesheet" href="assets/assetsIndex/cssIndex/contact.css" />
+    <link rel="stylesheet" href="assets/assetsIndex/cssIndex/footer.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <div class="header-list">
+        <div class="header-list-text">
+          <p>Harsh Singh</p>
         </div>
 
-        <div class="about-info">
-          <p><strong>Location:</strong> Kanpur, India</p>
-          <p><strong>Education:</strong> B.Tech in Computer Science & Engineering</p>
+        <!-- Hamburger Menu -->
+        <label class="hamburger">
+          <input type="checkbox" id="menu-toggle" />
+          <svg viewBox="0 0 32 32">
+            <path
+              class="line line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+            ></path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
+
+        <!-- Navigation Links -->
+        <ul class="header-list-link">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+      <div class="home-image-up">
+        <div class="home-image-bg-up">
+          <img
+            src="assets/assetsIndex/imagesIndex/homeImage.png"
+            class="my-image"
+            alt="Harsh's Picture"
+          />
+        </div>
+      </div>
+      <div class="home-text">
+        <div class="home-intro">
+          <p>Hi, I'm <span>Harsh</span>.</p>
+          <p><span id="typing-effect"></span></p>
+          <!-- Typing effect -->
+        </div>
+        <div class="contact-button"><a href="#contact">Contact</a></div>
+        <div class="home-social">
+          <a
+            href="https://github.com/codewithharshsingh"
+            class="home-social-icon"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/harsh-hsy/"
+            class="home-social-icon"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href="mailto:mr.harshsingh.contact@gmail.com"
+            class="home-social-icon"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+      <div class="home-image">
+        <div class="home-image-bg">
+          <img
+            src="assets/assetsIndex/imagesIndex/homeImage.png"
+            alt="Harsh's Picture"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About sections -->
+
+    <section id="about" class="about">
+      <div class="about-heading">
+        <h2>About</h2>
+      </div>
+
+      <div class="about-container">
+        <div class="about-image">
+          <img
+            src="assets/assetsIndex/imagesIndex/aboutImage.jpg"
+            alt="Harsh's Picture"
+          />
         </div>
 
-        <div class="resume-button"><a href="https://drive.google.com/uc?export=download&id=1gMhx-JkK3VDWSTL4ynixoJVT1t-kgyUj" download>Download Resume</a></div>
-        
+        <div class="about-text">
+          <div class="about-paragraph">
+            <p>
+              I’m <span>Harsh Singh</span>, a dedicated
+              <span>Front-End Developer</span>, <span>Web Designer</span> &
+              <span>Video Editor</span> with a passion for crafting visually
+              compelling and highly functional web experiences. With expertise
+              in HTML, CSS, JavaScript, and modern UI/UX principles, I
+              specialize in building responsive, intuitive, and aesthetically
+              refined digital solutions.
+            </p>
+          </div>
+
+          <div class="about-info">
+            <p><strong>Location:</strong> Kanpur, India</p>
+            <p>
+              <strong>Education:</strong> B.Tech in Computer Science &
+              Engineering
+            </p>
+          </div>
+
+          <div class="resume-button">
+            <a
+              href="https://drive.google.com/uc?export=download&id=1gMhx-JkK3VDWSTL4ynixoJVT1t-kgyUj"
+              download
+              >Download Resume</a
+            >
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills sections Projects, Contact) go here -->
+    <!-- Skills sections Projects, Contact) go here -->
 
-  <section id="skills" class="skills">
-    <div class="skills-heading">
+    <section id="skills" class="skills">
+      <div class="skills-heading">
         <h2>Skills</h2>
-    </div>
+      </div>
 
-    <div class="skills-container">  
-
+      <div class="skills-container">
         <div class="skills-ls">
+          <div class="skill-text">
+            <h2 class="skill-subtitle">Professional Skills</h2>
+            <p>
+              I specialize in front-end development with expertise in HTML, CSS,
+              and JavaScript, creating responsive and visually appealing
+              websites. My skills also include UI/UX design, utilizing tools
+              like Figma, Canva, and Adobe Photoshop to craft engaging user
+              experiences.
+            </p>
+          </div>
 
-            <div class="skill-text">
-                <h2 class="skill-subtitle">Professional Skills</h2>
-                <p>I specialize in front-end development with expertise in HTML, CSS, and JavaScript, creating responsive and visually appealing websites. My skills also include UI/UX design, utilizing tools like Figma, Canva, and Adobe Photoshop to craft engaging user experiences.</p>
+          <div class="skills-data">
+            <div class="skills-names">
+              <div class="skills-icon"><i class="fa-brands fa-html5"></i></div>
+              <div class="skills-name">HTML5</div>
+              <div class="skills-percentage">95%</div>
             </div>
-
-            <div class="skills-data">
-                <div class="skills-names">
-                    <div class="skills-icon"><i class="fa-brands fa-html5"></i></div>
-                    <div class="skills-name">HTML5</div>
-                    <div class="skills-percentage">95%</div>
-                </div>
-                <div class="skills-bar">
-                    <div class="skills-html"></div>
-                </div>
+            <div class="skills-bar">
+              <div class="skills-html"></div>
             </div>
+          </div>
 
-            <div class="skills-data">
-                <div class="skills-names">
-                    <div class="skills-icon"><i class="fa-brands fa-css3-alt"></i></div>
-                    <div class="skills-name">CSS3</div>
-                    <div class="skills-percentage">85%</div>
-                </div>
-                <div class="skills-bar">
-                    <div class="skills-css"></div>
-                </div>
+          <div class="skills-data">
+            <div class="skills-names">
+              <div class="skills-icon">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <div class="skills-name">CSS3</div>
+              <div class="skills-percentage">85%</div>
             </div>
-
-            <div class="skills-data">
-                <div class="skills-names">
-                    <div class="skills-icon"><i class="fa-brands fa-js"></i></div>
-                    <div class="skills-name">JAVASCRIPT</div>
-                    <div class="skills-percentage">70%</div>
-                </div>
-                <div class="skills-bar">
-                    <div class="skills-javascript"></div>
-                </div>
+            <div class="skills-bar">
+              <div class="skills-css"></div>
             </div>
+          </div>
 
-            <div class="skills-data">
-                <div class="skills-names">
-                    <div class="skills-icon"><i class="fa-solid fa-paintbrush"></i></div>
-                    <div class="skills-name">UI/UX</div>
-                    <div class="skills-percentage">85%</div>
-                </div>
-                <div class="skills-bar">
-                    <div class="skills-uiux"></div>
-                </div>
+          <div class="skills-data">
+            <div class="skills-names">
+              <div class="skills-icon"><i class="fa-brands fa-js"></i></div>
+              <div class="skills-name">JAVASCRIPT</div>
+              <div class="skills-percentage">70%</div>
             </div>
+            <div class="skills-bar">
+              <div class="skills-javascript"></div>
+            </div>
+          </div>
 
+          <div class="skills-data">
+            <div class="skills-names">
+              <div class="skills-icon">
+                <i class="fa-solid fa-paintbrush"></i>
+              </div>
+              <div class="skills-name">UI/UX</div>
+              <div class="skills-percentage">85%</div>
+            </div>
+            <div class="skills-bar">
+              <div class="skills-uiux"></div>
+            </div>
+          </div>
         </div>
 
         <div class="skills-rs">
-            <div class="skills-image">
-                <img src="assets/assetsIndex/imagesIndex/skillsImage.jpg" alt="Skills Representation">
-            </div>
+          <div class="skills-image">
+            <img
+              src="assets/assetsIndex/imagesIndex/skillsImage.jpg"
+              alt="Skills Representation"
+            />
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- Projects sections Contact) go here -->
 
-  <!-- Projects sections Contact) go here -->
-
-  <section id="projects" class="projects">
-    <div class="projects-heading">
-      <h2>Projects</h2>
-    </div>
-    <div class="container">
-      <div class="projects-grid" id="projectsContainer">
+    <section id="projects" class="projects">
+      <div class="projects-heading">
+        <h2>Projects</h2>
+      </div>
+      <div class="container">
+        <div class="projects-grid" id="projectsContainer">
           <!-- Projects will be dynamically inserted here -->
+        </div>
+
+        <button id="toggleProjects" class="btn">See More Projects</button>
       </div>
+    </section>
 
-      <button id="toggleProjects" class="btn">See More Projects</button>
-    </div>
-  </section>
+    <!-- Contact sections Contact) go here  entry.224609439 -->
 
-  <!-- Contact sections Contact) go here  entry.224609439 -->
-
-  <section id="contact" class="contact">
-    <div class="contact-heading">
+    <section id="contact" class="contact">
+      <div class="contact-heading">
         <h2>Contact</h2>
-    </div>
-
-    <div class="contact-container">
-
-      <div class="contact-page-info">
-        <div class="contact-page-text">
-          <p class="contact-text-heading">Let's <span class="highlight-blue">Connect!</span></p>
-          <p class="contact-description">Want to <span class="highlight-blue">work together</span> or have a <span class="highlight-blue">question</span>?</p>
-          <p class="contact-description">Send me a <span class="highlight-blue">message</span>, and I'll get back to you <span class="highlight-blue">soon</span>!</p>
-        </div>
-
-        <div class="info-item">
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:mr.harshsingh.contact@gmail.com">mr.harshsingh.contact@gmail.com</a>
-        </div>
-        <div class="info-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <a href="https://www.google.com/maps/place/Kanpur">Kanpur, India</a>
-        </div>
-
-        <!-- Social Icons -->
-        <div class="social-links">
-          <a href="https://github.com/codewithharshsingh" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://www.linkedin.com/in/harsh-hsy/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        </div>
       </div>
-  
-      <form id="contact-form" class="contact-form">
-        <div class="contact-name">
-            <input class="first-name" type="text" name="entry.1337637142" placeholder="First Name" required>
-            <input class="last-name" type="text" name="entry.224609439" placeholder="Last Name" required>
+
+      <div class="contact-container">
+        <div class="contact-page-info">
+          <div class="contact-page-text">
+            <p class="contact-text-heading">
+              Let's <span class="highlight-blue">Connect!</span>
+            </p>
+            <p class="contact-description">
+              Want to <span class="highlight-blue">work together</span> or have
+              a <span class="highlight-blue">question</span>?
+            </p>
+            <p class="contact-description">
+              Send me a <span class="highlight-blue">message</span>, and I'll
+              get back to you <span class="highlight-blue">soon</span>!
+            </p>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:mr.harshsingh.contact@gmail.com"
+              >mr.harshsingh.contact@gmail.com</a
+            >
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="https://www.google.com/maps/place/Kanpur">Kanpur, India</a>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="social-links">
+            <a href="https://github.com/codewithharshsingh" target="_blank"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+            <a href="https://www.linkedin.com/in/harsh-hsy/" target="_blank"
+              ><i class="fab fa-linkedin"></i> LinkedIn</a
+            >
+          </div>
         </div>
-        
-        <input class="email" type="email" name="entry.1555667134" placeholder="Email" required>    
-        <input class="subject" type="text" name="entry.769444017" placeholder="Subject" required>
-        <textarea class="message" name="entry.858978292" rows="5" placeholder="Leave us a message..." required></textarea>
-        <button class="submit-button" type="submit">Send Message</button>
-      </form>
-    </div>
-  
-  </section>
 
-  <footer class="footer">
-    <p class="copyright">&copy; 2025 <span><i class="fas fa-code"></i> Harsh Singh</span>. All rights reserved. Image by <span><a href="https://www.freepik.com" target="_blank">Freepik</a></span>.</p>
-    <button id="scrollToTop" class="scroll-top">
+        <form id="contact-form" class="contact-form">
+          <div class="contact-name">
+            <input
+              class="first-name"
+              type="text"
+              name="entry.1337637142"
+              placeholder="First Name"
+              required
+            />
+            <input
+              class="last-name"
+              type="text"
+              name="entry.224609439"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+
+          <input
+            class="email"
+            type="email"
+            name="entry.1555667134"
+            placeholder="Email"
+            required
+          />
+          <input
+            class="subject"
+            type="text"
+            name="entry.769444017"
+            placeholder="Subject"
+            required
+          />
+          <textarea
+            class="message"
+            name="entry.858978292"
+            rows="5"
+            placeholder="Leave us a message..."
+            required
+          ></textarea>
+          <button class="submit-button" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="copyright">
+        &copy; 2025 <span><i class="fas fa-code"></i> Harsh Singh</span>. All
+        rights reserved. Image by
+        <span
+          ><a href="https://www.freepik.com" target="_blank">Freepik</a></span
+        >.
+      </p>
+      <button id="scrollToTop" class="scroll-top">
         <i class="fas fa-arrow-up"></i>
-    </button>
-  </footer>
+      </button>
+    </footer>
 
-
-  <!-- Link to script.js -->
-  <script src="assets/assetsIndex/jsIndex/script.js"></script>
-</body>
+    <!-- Link to script.js -->
+    <script src="assets/assetsIndex/jsIndex/script.js"></script>
+  </body>
 </html>
