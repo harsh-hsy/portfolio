@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Close menu when a link is clicked
-    document.querySelectorAll(".header-list-link a").forEach(link => {
+    document.querySelectorAll(".header-list-link a").forEach((link) => {
       link.addEventListener("click", function () {
         hamburger.checked = false;
         navLinks.classList.remove("show");
@@ -51,22 +51,55 @@ document.addEventListener("DOMContentLoaded", () => {
   type(); // Start typing effect
 });
 
-
-
-
-
 // 🔹 Dynamic Projects Section
 document.addEventListener("DOMContentLoaded", function () {
   const projectsContainer = document.getElementById("projectsContainer");
   const toggleBtn = document.getElementById("toggleProjects");
 
   const projects = [
-    { img: "assets/assetsIndex/imagesIndex/skillsImage.jpg", title: "Harsh Harsh Harsh Harsh Harsh  ", desc: "This is project 1 description.Harsh HarshHarsh Harsh Harsh Harsh Harsh HarshHarsh Harsh Harsh ", live: "#", download: "https://github.com/Harsh-hsy/Amazon-Homepage-Clone/archive/refs/heads/main.zip" },
-    { img: "assets/assetsIndex/imagesIndex/skillsImage.jpg", title: "Harsh Harsh ", desc: "This is project 2 description.", live: "#", download: "assets/projects/project2.zip" },
-    { img: "assets/assetsIndex/imagesIndex/skillsImage.jpg", title: "Harsh Harsh ", desc: "This is project 2 description.", live: "#", download: "assets/projects/project2.zip" },
-    { img: "assets/assetsIndex/imagesIndex/skillsImage.jpg", title: "Harsh Harsh ", desc: "This is project 2 description.", live: "#", download: "assets/projects/project2.zip" },
-    { img: "assets/assetsIndex/imagesIndex/skillsImage.jpg", title: "Harsh Harsh ", desc: "This is project 2 description.", live: "#", download: "assets/projects/project2.zip" },
-    { img: "assets/assetsIndex/imagesIndex/skillsImage.jpg", title: "Harsh Harsh Harsh Harsh Harsh Harsh ", desc: "This is project 2 description. Harsh Harsh Harsh Harsh HarshHarsh Harsh Harsh Harsh Harsh", live: "#", download: "assets/projects/project2.zip" }
+    {
+      img: "assets/assetsIndex/imagesIndex/freshcart-image.png",
+      title: " FreshCart – Grocery Website",
+      desc: "A fully responsive grocery landing page featuring a clean design, mobile-friendly layout, and structured sections like header, hero, and product categories.",
+      live: "https://freshcart-demo-site.netlify.app/",
+      download:
+        "https://github.com/codewithharshsingh/freshcart-demo-site/archive/refs/heads/main.zip",
+    },
+    {
+      img: "assets/assetsIndex/imagesIndex/skillsImage.jpg",
+      title: "Harsh Harsh ",
+      desc: "This is project 2 description.",
+      live: "#",
+      download: "assets/projects/project2.zip",
+    },
+    {
+      img: "assets/assetsIndex/imagesIndex/skillsImage.jpg",
+      title: "Harsh Harsh ",
+      desc: "This is project 2 description.",
+      live: "#",
+      download: "assets/projects/project2.zip",
+    },
+    {
+      img: "assets/assetsIndex/imagesIndex/skillsImage.jpg",
+      title: "Harsh Harsh ",
+      desc: "This is project 2 description.",
+      live: "#",
+      download: "assets/projects/project2.zip",
+    },
+    {
+      img: "assets/assetsIndex/imagesIndex/skillsImage.jpg",
+      title: "Harsh Harsh ",
+      desc: "This is project 2 description.",
+      live: "#",
+      download: "assets/projects/project2.zip",
+    },
+    {
+      img: "assets/assetsIndex/imagesIndex/skillsImage.jpg",
+      title: "Harsh Harsh Harsh Harsh Harsh Harsh ",
+      desc: "This is project 2 description. Harsh Harsh Harsh Harsh HarshHarsh Harsh Harsh Harsh Harsh",
+      live: "#",
+      download: "assets/projects/project2.zip",
+    },
   ];
 
   let showAll = false;
@@ -74,7 +107,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function renderProjects() {
     projectsContainer.innerHTML = "";
 
-    const projectsToShow = showAll ? projects.length : Math.min(4, projects.length);
+    const projectsToShow = showAll
+      ? projects.length
+      : Math.min(4, projects.length);
     const rows = Math.ceil(projectsToShow / 4) * 4;
 
     for (let i = 0; i < rows; i++) {
@@ -87,8 +122,12 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="project-title">${projects[i].title}</div>
           <div class="project-desc">${projects[i].desc.substring(0, 150)}</div>
           <div class="project-buttons">
-            <button class="btn-primary" data-live="${projects[i].live}">Live Demo</button>
-            <button class="btn-secondary" data-download="${projects[i].download}">Download</button>
+            <button class="btn-primary" data-live="${
+              projects[i].live
+            }">Live Demo</button>
+            <button class="btn-secondary" data-download="${
+              projects[i].download
+            }">Download</button>
           </div>
         `;
 
@@ -99,19 +138,20 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleBtn.innerText = showAll ? "See Less Projects" : "See More Projects";
 
     // Add event listeners for buttons
-    const downloadButtons = projectsContainer.querySelectorAll('.btn-secondary');
-    downloadButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        const file = this.getAttribute('data-download');
+    const downloadButtons =
+      projectsContainer.querySelectorAll(".btn-secondary");
+    downloadButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const file = this.getAttribute("data-download");
         downloadProject(file);
       });
     });
 
-    const liveButtons = projectsContainer.querySelectorAll('.btn-primary');
-    liveButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        const liveUrl = this.getAttribute('data-live');
-        window.open(liveUrl, '_blank');
+    const liveButtons = projectsContainer.querySelectorAll(".btn-primary");
+    liveButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const liveUrl = this.getAttribute("data-live");
+        window.open(liveUrl, "_blank");
       });
     });
   }
@@ -133,41 +173,41 @@ document.addEventListener("DOMContentLoaded", function () {
   renderProjects();
 });
 
-
-
-
-
 // 🔹 Contact Form Submission with Redirect
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("contact-form").addEventListener("submit", function (event) {
-    event.preventDefault();
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
 
-    var form = event.target;
-    var formData = new FormData(form);
-    var submitButton = form.querySelector(".submit-button");
+      var form = event.target;
+      var formData = new FormData(form);
+      var submitButton = form.querySelector(".submit-button");
 
-    submitButton.disabled = true;
-    submitButton.textContent = "Sending...";
+      submitButton.disabled = true;
+      submitButton.textContent = "Sending...";
 
-    fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSfZs7tGrlFcuQP8KB5GH5kuMbVthli3Mu_fPtYuIor4mS5XOA/formResponse", {
-      method: "POST",
-      body: formData,
-      mode: "no-cors"
-    }).then(() => {
-      window.location.href = "thankyou.html";
-    }).catch(error => {
-      console.error("Error:", error);
-      alert("Something went wrong. Please try again.");
-    }).finally(() => {
-      submitButton.disabled = false;
-      submitButton.textContent = "Send Message";
+      fetch(
+        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfZs7tGrlFcuQP8KB5GH5kuMbVthli3Mu_fPtYuIor4mS5XOA/formResponse",
+        {
+          method: "POST",
+          body: formData,
+          mode: "no-cors",
+        }
+      )
+        .then(() => {
+          window.location.href = "thankyou.html";
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          alert("Something went wrong. Please try again.");
+        })
+        .finally(() => {
+          submitButton.disabled = false;
+          submitButton.textContent = "Send Message";
+        });
     });
-  });
 });
-
-
-
-
 
 // 🔹 Scroll to Top Button
 document.addEventListener("DOMContentLoaded", function () {
@@ -184,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function () {
   scrollToTopBtn.addEventListener("click", function () {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   });
 });
