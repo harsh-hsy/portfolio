@@ -66,11 +66,11 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://github.com/codewithharshsingh/freshcart-demo-site/archive/refs/heads/main.zip",
     },
     {
-      img: "assets/assetsIndex/imagesIndex/skillsImage.jpg",
-      title: "Harsh Harsh ",
-      desc: "This is project 2 description.",
-      live: "#",
-      download: "assets/projects/project2.zip",
+      img: "assets/assetsIndex/imagesIndex/weather-image.png",
+      title: "Weather Web App",
+      desc: "Live weather app with light/dark theme, using OpenWeatherMap API and responsive design.",
+      live: "https://codewithharshsingh-weather-web-app.netlify.app/",
+      download: "#",
     },
     {
       img: "assets/assetsIndex/imagesIndex/skillsImage.jpg",
