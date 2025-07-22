@@ -74,11 +74,12 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://github.com/codewithharshsingh/user-weather-app/archive/refs/heads/main.zip",
     },
     {
-      img: "assets/assetsIndex/imagesIndex/skillsImage.jpg",
-      title: "Harsh Harsh ",
-      desc: "This is project 2 description.",
-      live: "#",
-      download: "assets/projects/project2.zip",
+      img: "assets/assetsIndex/imagesIndex/typing-speed-test-image.png",
+      title: " Typing Speed Test Website",
+      desc: "Responsive typing test website using HTML, CSS, JS. Tracks WPM and accuracy in real time with a clean UI.",
+      live: "https://codewithharshsingh-typing-speed-test.netlify.app/",
+      download:
+        "https://github.com/codewithharshsingh/typing-speed-test/archive/refs/heads/main.zip",
     },
     {
       img: "assets/assetsIndex/imagesIndex/skillsImage.jpg",
