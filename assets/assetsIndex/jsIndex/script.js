@@ -82,11 +82,12 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://github.com/codewithharshsingh/typing-speed-test/archive/refs/heads/main.zip",
     },
     {
-      img: "assets/assetsIndex/imagesIndex/skillsImage.jpg",
-      title: "Harsh Harsh ",
-      desc: "This is project 2 description.",
-      live: "#",
-      download: "assets/projects/project2.zip",
+      img: "assets/assetsIndex/imagesIndex/calculator-image.png",
+      title: "Calculator",
+      desc: "A simple, responsive calculator built with HTML, CSS, and JavaScript for basic arithmetic operations.",
+      live: "https://codewithharshsingh-calculator.netlify.app/",
+      download:
+        "https://github.com/codewithharshsingh/calculator/archive/refs/heads/main.zip",
     },
     {
       img: "assets/assetsIndex/imagesIndex/skillsImage.jpg",
