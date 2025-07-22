@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       img: "assets/assetsIndex/imagesIndex/freshcart-image.png",
       title: " FreshCart – Grocery",
-      desc: "Modern, responsive grocery site clone built with HTML, CSS, and JavaScript.",
+      desc: "Responsive grocery website clone using HTML, CSS, JS. Clean design with product sections and mobile-friendly layout.",
       live: "https://codewithharshsingh-freshcart.netlify.app/",
       download:
         "https://github.com/codewithharshsingh/freshcart-demo-site/archive/refs/heads/main.zip",
