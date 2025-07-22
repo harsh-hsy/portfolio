@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       img: "assets/assetsIndex/imagesIndex/weather-image.png",
-      title: "Weather Web App",
+      title: "Weather App",
       desc: "Live weather app with light/dark theme, using OpenWeatherMap API and responsive design.",
       live: "https://codewithharshsingh-weather-app.netlify.app/",
       download:
