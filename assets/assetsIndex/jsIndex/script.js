@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const projects = [
     {
       img: "assets/assetsIndex/imagesIndex/freshcart-image.png",
-      title: " FreshCart – Grocery Website",
+      title: " FreshCart – Grocery",
       desc: "Modern, responsive grocery site clone built with HTML, CSS, and JavaScript.",
       live: "https://codewithharshsingh-freshcart.netlify.app/",
       download:
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       img: "assets/assetsIndex/imagesIndex/weather-image.png",
-      title: "Weather App",
+      title: "Weather",
       desc: "Live weather app with light/dark theme, using OpenWeatherMap API and responsive design.",
       live: "https://codewithharshsingh-weather-app.netlify.app/",
       download:
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       img: "assets/assetsIndex/imagesIndex/typing-speed-test-image.png",
-      title: " Typing Speed Test Website",
+      title: " Typing Speed Test",
       desc: "Responsive typing test website using HTML, CSS, JS. Tracks WPM and accuracy in real time with a clean UI.",
       live: "https://codewithharshsingh-typing-speed-test.netlify.app/",
       download:
