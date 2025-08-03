@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const projects = [
     {
       img: "assets/assetsIndex/imagesIndex/drive-link-generator.png",
-      title: "drive-link-generator",
+      title: "Google Drive Direct Download Link Generator",
       desc: "A simple web app that converts Google Drive links into instant direct download links.",
       live: "https://drive-link-generator.netlify.app/",
       download:
