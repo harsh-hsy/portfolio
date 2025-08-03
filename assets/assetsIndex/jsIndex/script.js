@@ -58,6 +58,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const projects = [
     {
+      img: "assets/assetsIndex/imagesIndex/drive-link-generator.png",
+      title: "drive-link-generator",
+      desc: "A simple web app that converts Google Drive links into instant direct download links.",
+      live: "https://drive-link-generator.netlify.app/",
+      download:
+        "https://github.com/codewithharshsingh/drive-link-generator/archive/refs/heads/main.zip",
+    },
+    {
       img: "assets/assetsIndex/imagesIndex/freshcart-image.png",
       title: " FreshCart – Grocery",
       desc: "Responsive grocery website clone using HTML, CSS, JS. Clean design with product sections and mobile-friendly layout.",
@@ -88,14 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
       live: "https://codewithharshsingh-calculator.netlify.app/",
       download:
         "https://github.com/codewithharshsingh/calculator/archive/refs/heads/main.zip",
-    },
-    {
-      img: "assets/assetsIndex/imagesIndex/drive-link-generator.png",
-      title: "drive-link-generator",
-      desc: "A simple web app that converts Google Drive links into instant direct download links.",
-      live: "https://drive-link-generator.netlify.app/",
-      download:
-        "https://github.com/codewithharshsingh/drive-link-generator/archive/refs/heads/main.zip",
     },
   ];
 
