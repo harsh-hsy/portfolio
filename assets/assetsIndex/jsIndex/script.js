@@ -90,18 +90,12 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://github.com/codewithharshsingh/calculator/archive/refs/heads/main.zip",
     },
     {
-      img: "assets/assetsIndex/imagesIndex/skillsImage.jpg",
-      title: "Harsh Harsh ",
-      desc: "This is project 2 description.",
-      live: "#",
-      download: "assets/projects/project2.zip",
-    },
-    {
-      img: "assets/assetsIndex/imagesIndex/skillsImage.jpg",
-      title: "Harsh Harsh Harsh Harsh Harsh Harsh ",
-      desc: "This is project 2 description. Harsh Harsh Harsh Harsh HarshHarsh Harsh Harsh Harsh Harsh",
-      live: "#",
-      download: "assets/projects/project2.zip",
+      img: "assets/assetsIndex/imagesIndex/drive-link-generator.png",
+      title: "drive-link-generator",
+      desc: "A simple web app that converts Google Drive links into instant direct download links.",
+      live: "https://drive-link-generator.netlify.app/",
+      download:
+        "https://github.com/codewithharshsingh/drive-link-generator/archive/refs/heads/main.zip",
     },
   ];
 
