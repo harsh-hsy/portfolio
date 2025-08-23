@@ -1,6 +1,14 @@
-// 🔹 Hamburger Menu Toggle
+document.addEventListener("DOMContentLoaded", () => {
+  // This is the main function that runs all other scripts
+  initHamburgerMenu();
+  initTypingEffect();
+  initProjectsSection();
+  initContactForm();
+  initScrollToTop();
+});
 
-document.addEventListener("DOMContentLoaded", function () {
+// 🔹 Hamburger Menu Toggle
+function initHamburgerMenu() {
   const hamburger = document.querySelector(".hamburger input");
   const navLinks = document.querySelector(".header-list-link");
 
@@ -9,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
       navLinks.classList.toggle("show", this.checked);
     });
 
-    // Close menu when a link is clicked
     document.querySelectorAll(".header-list-link a").forEach((link) => {
       link.addEventListener("click", function () {
         hamburger.checked = false;
@@ -17,12 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
-});
+}
 
 // 🔹 Typing Effect in Home Section
-
-document.addEventListener("DOMContentLoaded", () => {
+function initTypingEffect() {
   const typingElement = document.getElementById("typing-effect");
+  if (!typingElement) return;
+
   const texts = ["A Web Designer.", "A Frontend Developer.", "A Video Editor."];
   let textIndex = 0;
   let charIndex = 0;
@@ -49,47 +57,72 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   type(); // Start typing effect
-});
+}
 
 // 🔹 Dynamic Projects Section
-// 🔹 Dynamic Projects Section
-document.addEventListener("DOMContentLoaded", function () {
+function initProjectsSection() {
   const projectsContainer = document.getElementById("projectsContainer");
   const toggleBtn = document.getElementById("toggleProjects");
 
+  if (!projectsContainer || !toggleBtn) return;
+
   const projects = [
     {
-      img: "assets/assetsIndex/imagesIndex/qrfusion.png",
+      imgs: [
+        "assets/assetsIndex/imagesIndex/qr-fusion/qrfusion-1.png",
+        "assets/assetsIndex/imagesIndex/qr-fusion/qrfusion-2.png",
+        "assets/assetsIndex/imagesIndex/qr-fusion/qrfusion-3.png",
+      ],
       title: "QR Fusion - Free & Advanced QR Code Generator",
       desc: "Generate, customize, and download professional QR codes instantly — free, private, and hassle-free.",
       live: "https://qrfusion.netlify.app/",
     },
     {
-      img: "assets/assetsIndex/imagesIndex/drive-link-generator.png",
+      imgs: [
+        "assets/assetsIndex/imagesIndex/drive-link-generator/drive-link-generator-1.png",
+        "assets/assetsIndex/imagesIndex/drive-link-generator/drive-link-generator-2.png",
+        "assets/assetsIndex/imagesIndex/drive-link-generator/drive-link-generator-3.png",
+      ],
       title: "Google Drive Direct Download Link Generator",
       desc: "Quickly turn any Google Drive share link into an instant direct download link — fast, private, and hassle-free.",
       live: "https://drive-link-generator.netlify.app/",
     },
     {
-      img: "assets/assetsIndex/imagesIndex/freshcart-image.png",
+      imgs: [
+        "assets/assetsIndex/imagesIndex/freshcart/freshcart-1.png",
+        "assets/assetsIndex/imagesIndex/freshcart/freshcart-2.png",
+        "assets/assetsIndex/imagesIndex/freshcart/freshcart-3.png",
+      ],
       title: " FreshCart – Grocery",
       desc: "Responsive grocery website clone using HTML, CSS, JS. Clean design with product sections and mobile-friendly layout.",
       live: "https://codewithharshsingh-freshcart.netlify.app/",
     },
     {
-      img: "assets/assetsIndex/imagesIndex/weather-image.png",
-      title: "Weather",
+      imgs: [
+        "assets/assetsIndex/imagesIndex/weather-app/weather-app-1.png",
+        "assets/assetsIndex/imagesIndex/weather-app/weather-app-2.png",
+        "assets/assetsIndex/imagesIndex/weather-app/weather-app-3.png",
+      ],
+      title: "Weather App",
       desc: "Live weather app with light/dark theme, using OpenWeatherMap API and responsive design.",
       live: "https://codewithharshsingh-weather-app.netlify.app/",
     },
     {
-      img: "assets/assetsIndex/imagesIndex/typing-speed-test-image.png",
+      imgs: [
+        "assets/assetsIndex/imagesIndex/typing-speed-test/typing-speed-test-1.png",
+        "assets/assetsIndex/imagesIndex/typing-speed-test/typing-speed-test-2.png",
+        "assets/assetsIndex/imagesIndex/typing-speed-test/typing-speed-test-3.png",
+      ],
       title: " Typing Speed Test",
       desc: "Responsive typing test website using HTML, CSS, JS. Tracks WPM and accuracy in real time with a clean UI.",
       live: "https://codewithharshsingh-typing-speed-test.netlify.app/",
     },
     {
-      img: "assets/assetsIndex/imagesIndex/calculator-image.png",
+      imgs: [
+        "assets/assetsIndex/imagesIndex/calculator/calculator-1.png",
+        "assets/assetsIndex/imagesIndex/calculator/calculator-2.png",
+        "assets/assetsIndex/imagesIndex/calculator/calculator-3.png",
+      ],
       title: "Calculator",
       desc: "A simple, responsive calculator built with HTML, CSS, and JavaScript for basic arithmetic operations.",
       live: "https://codewithharshsingh-calculator.netlify.app/",
@@ -100,105 +133,130 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function renderProjects() {
     projectsContainer.innerHTML = "";
+    const projectsToShow = showAll ? projects : projects.slice(0, 4);
 
-    const projectsToShow = showAll
-      ? projects.length
-      : Math.min(4, projects.length);
-    const rows = Math.ceil(projectsToShow / 4) * 4;
+    projectsToShow.forEach((projectData) => {
+      const projectEl = document.createElement("div");
+      projectEl.classList.add("project");
+      const imagesHTML = projectData.imgs
+        .map((imgSrc) => `<img src="${imgSrc}" alt="${projectData.title}">`)
+        .join("");
+      const dotsHTML = projectData.imgs
+        .map((_, index) => `<span class="dot" data-slide="${index}"></span>`)
+        .join("");
 
-    for (let i = 0; i < rows; i++) {
-      if (projects[i]) {
-        const project = document.createElement("div");
-        project.classList.add("project");
-
-        // The "Download" button has been removed from here
-        project.innerHTML = `
-          <img src="${projects[i].img}" alt="${projects[i].title}">
-          <div class="project-title">${projects[i].title}</div>
-          <div class="project-desc">${projects[i].desc.substring(0, 150)}</div>
+      projectEl.innerHTML = `
+        <div class="slider-container">
+          <div class="slider-wrapper">${imagesHTML}</div>
+          <div class="slider-dots">${dotsHTML}</div>
+        </div>
+        <div class="project-info">
+          <div class="project-title">${projectData.title}</div>
+          <div class="project-desc">${projectData.desc.substring(0, 150)}</div>
           <div class="project-buttons">
-            <button class="btn-primary" data-live="${
-              projects[i].live
-            }">Live Demo</button>
+            <a href="${
+              projectData.live
+            }" target="_blank" class="btn-primary">Live Demo</a>
           </div>
-        `;
-
-        projectsContainer.appendChild(project);
-      }
-    }
-
-    toggleBtn.innerText = showAll ? "See Less Projects" : "See More Projects";
-
-    // Add event listeners for live demo buttons
-    const liveButtons = projectsContainer.querySelectorAll(".btn-primary");
-    liveButtons.forEach((button) => {
-      button.addEventListener("click", function () {
-        const liveUrl = this.getAttribute("data-live");
-        window.open(liveUrl, "_blank");
-      });
+        </div>
+      `;
+      projectsContainer.appendChild(projectEl);
+      initSlider(projectEl);
     });
+    toggleBtn.innerText = showAll ? "See Less Projects" : "See More Projects";
   }
 
-  toggleBtn.addEventListener("click", function () {
+  function initSlider(projectCard) {
+    const wrapper = projectCard.querySelector(".slider-wrapper");
+    const dots = projectCard.querySelectorAll(".dot");
+    const images = projectCard.querySelectorAll(".slider-wrapper img");
+    if (images.length <= 1) return; // Don't initialize slider if only one image
+
+    const slideCount = images.length;
+    let currentIndex = 0;
+    let autoSwipeInterval;
+
+    function goToSlide(index) {
+      if (!wrapper) return;
+      wrapper.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((dot) => dot.classList.remove("active"));
+      if (dots[index]) dots[index].classList.add("active");
+      currentIndex = index;
+    }
+
+    function nextSlide() {
+      goToSlide((currentIndex + 1) % slideCount);
+    }
+
+    function startAutoSwipe() {
+      stopAutoSwipe();
+      autoSwipeInterval = setInterval(nextSlide, 2000); // 2-second interval
+    }
+
+    function stopAutoSwipe() {
+      clearInterval(autoSwipeInterval);
+    }
+
+    dots.forEach((dot) => {
+      dot.addEventListener("click", (e) => {
+        goToSlide(parseInt(e.target.dataset.slide));
+        startAutoSwipe(); // Reset timer on manual click
+      });
+    });
+
+    goToSlide(0);
+    startAutoSwipe();
+  }
+
+  toggleBtn.addEventListener("click", () => {
     showAll = !showAll;
     renderProjects();
   });
 
-  renderProjects();
-});
+  renderProjects(); // Initial render
+}
 
 // 🔹 Contact Form Submission with Redirect
-document.addEventListener("DOMContentLoaded", function () {
-  document
-    .getElementById("contact-form")
-    .addEventListener("submit", function (event) {
-      event.preventDefault();
+function initContactForm() {
+  const contactForm = document.getElementById("contact-form");
+  if (!contactForm) return;
 
-      var form = event.target;
-      var formData = new FormData(form);
-      var submitButton = form.querySelector(".submit-button");
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const form = event.target;
+    const submitButton = form.querySelector(".submit-button");
 
-      submitButton.disabled = true;
-      submitButton.textContent = "Sending...";
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending...";
 
-      fetch(
-        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfZs7tGrlFcuQP8KB5GH5kuMbVthli3Mu_fPtYuIor4mS5XOA/formResponse",
-        {
-          method: "POST",
-          body: formData,
-          mode: "no-cors",
-        }
-      )
-        .then(() => {
-          window.location.href = "thankyou.html";
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-          alert("Something went wrong. Please try again.");
-        })
-        .finally(() => {
-          submitButton.disabled = false;
-          submitButton.textContent = "Send Message";
-        });
-    });
-});
+    fetch(
+      "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfZs7tGrlFcuQP8KB5GH5kuMbVthli3Mu_fPtYuIor4mS5XOA/formResponse",
+      { method: "POST", body: new FormData(form), mode: "no-cors" }
+    )
+      .then(() => {
+        window.location.href = "thankyou.html";
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("Something went wrong. Please try again.");
+      })
+      .finally(() => {
+        submitButton.disabled = false;
+        submitButton.textContent = "Send Message";
+      });
+  });
+}
 
 // 🔹 Scroll to Top Button
-document.addEventListener("DOMContentLoaded", function () {
-  var scrollToTopBtn = document.getElementById("scrollToTop");
+function initScrollToTop() {
+  const scrollToTopBtn = document.getElementById("scrollToTop");
+  if (!scrollToTopBtn) return;
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 300) {
-      scrollToTopBtn.style.display = "flex";
-    } else {
-      scrollToTopBtn.style.display = "none";
-    }
+  window.addEventListener("scroll", () => {
+    scrollToTopBtn.style.display = window.scrollY > 300 ? "flex" : "none";
   });
 
-  scrollToTopBtn.addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+  scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
-});
+}
