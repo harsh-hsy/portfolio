@@ -58,9 +58,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const projects = [
     {
+      img: "assets/assetsIndex/imagesIndex/qrfusion.png",
+      title: "QR Fusion - Free & Advanced QR Code Generator",
+      desc: "Generate, customize, and download professional QR codes instantly — free, private, and hassle-free.",
+      live: "https://qrfusion.netlify.app/",
+      download:
+        "https://github.com/codewithharshsingh/qrfusion/archive/refs/heads/main.zip",
+    },
+    {
       img: "assets/assetsIndex/imagesIndex/drive-link-generator.png",
       title: "Google Drive Direct Download Link Generator",
-      desc: "A simple web app that converts Google Drive links into instant direct download links.",
+      desc: "Quickly turn any Google Drive share link into an instant direct download link — fast, private, and hassle-free.",
       live: "https://drive-link-generator.netlify.app/",
       download:
         "https://github.com/codewithharshsingh/drive-link-generator/archive/refs/heads/main.zip",
