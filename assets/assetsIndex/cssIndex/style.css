@@ -73,19 +73,19 @@ button:hover {
   align-items: center;
   justify-content: center;
   transition: 0.3s ease-in-out;
-  box-shadow: 0 0 20px #3BBEFF, 0 0 20px #3BBEFF;
+  box-shadow: 0 0 20px #3bbeff, 0 0 20px #3bbeff;
 }
 
 /* Hover Effect */
 .scroll-top:hover {
-color: #ffffff;
-background-color: #3BBEFF;
-box-shadow:  0 0 20px #005680, 0 0 20px #005f8e;
-transition-duration: 0.3s;
+  color: #ffffff;
+  background-color: #3bbeff;
+  box-shadow: 0 0 20px #005680, 0 0 20px #005f8e;
+  transition-duration: 0.3s;
 }
 
 @media screen and (max-width: 480px) {
-  .scroll-top{
+  .scroll-top {
     margin-bottom: 2rem;
   }
 }

@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // 🔹 Dynamic Projects Section
+// 🔹 Dynamic Projects Section
 document.addEventListener("DOMContentLoaded", function () {
   const projectsContainer = document.getElementById("projectsContainer");
   const toggleBtn = document.getElementById("toggleProjects");
@@ -62,48 +63,36 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "QR Fusion - Free & Advanced QR Code Generator",
       desc: "Generate, customize, and download professional QR codes instantly — free, private, and hassle-free.",
       live: "https://qrfusion.netlify.app/",
-      download:
-        "https://github.com/codewithharshsingh/qrfusion/archive/refs/heads/main.zip",
     },
     {
       img: "assets/assetsIndex/imagesIndex/drive-link-generator.png",
       title: "Google Drive Direct Download Link Generator",
       desc: "Quickly turn any Google Drive share link into an instant direct download link — fast, private, and hassle-free.",
       live: "https://drive-link-generator.netlify.app/",
-      download:
-        "https://github.com/codewithharshsingh/drive-link-generator/archive/refs/heads/main.zip",
     },
     {
       img: "assets/assetsIndex/imagesIndex/freshcart-image.png",
       title: " FreshCart – Grocery",
       desc: "Responsive grocery website clone using HTML, CSS, JS. Clean design with product sections and mobile-friendly layout.",
       live: "https://codewithharshsingh-freshcart.netlify.app/",
-      download:
-        "https://github.com/codewithharshsingh/freshcart-demo-site/archive/refs/heads/main.zip",
     },
     {
       img: "assets/assetsIndex/imagesIndex/weather-image.png",
       title: "Weather",
       desc: "Live weather app with light/dark theme, using OpenWeatherMap API and responsive design.",
       live: "https://codewithharshsingh-weather-app.netlify.app/",
-      download:
-        "https://github.com/codewithharshsingh/user-weather-app/archive/refs/heads/main.zip",
     },
     {
       img: "assets/assetsIndex/imagesIndex/typing-speed-test-image.png",
       title: " Typing Speed Test",
       desc: "Responsive typing test website using HTML, CSS, JS. Tracks WPM and accuracy in real time with a clean UI.",
       live: "https://codewithharshsingh-typing-speed-test.netlify.app/",
-      download:
-        "https://github.com/codewithharshsingh/typing-speed-test/archive/refs/heads/main.zip",
     },
     {
       img: "assets/assetsIndex/imagesIndex/calculator-image.png",
       title: "Calculator",
       desc: "A simple, responsive calculator built with HTML, CSS, and JavaScript for basic arithmetic operations.",
       live: "https://codewithharshsingh-calculator.netlify.app/",
-      download:
-        "https://github.com/codewithharshsingh/calculator/archive/refs/heads/main.zip",
     },
   ];
 
@@ -122,6 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const project = document.createElement("div");
         project.classList.add("project");
 
+        // The "Download" button has been removed from here
         project.innerHTML = `
           <img src="${projects[i].img}" alt="${projects[i].title}">
           <div class="project-title">${projects[i].title}</div>
@@ -130,9 +120,6 @@ document.addEventListener("DOMContentLoaded", function () {
             <button class="btn-primary" data-live="${
               projects[i].live
             }">Live Demo</button>
-            <button class="btn-secondary" data-download="${
-              projects[i].download
-            }">Download</button>
           </div>
         `;
 
@@ -142,16 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     toggleBtn.innerText = showAll ? "See Less Projects" : "See More Projects";
 
-    // Add event listeners for buttons
-    const downloadButtons =
-      projectsContainer.querySelectorAll(".btn-secondary");
-    downloadButtons.forEach((button) => {
-      button.addEventListener("click", function () {
-        const file = this.getAttribute("data-download");
-        downloadProject(file);
-      });
-    });
-
+    // Add event listeners for live demo buttons
     const liveButtons = projectsContainer.querySelectorAll(".btn-primary");
     liveButtons.forEach((button) => {
       button.addEventListener("click", function () {
@@ -159,15 +137,6 @@ document.addEventListener("DOMContentLoaded", function () {
         window.open(liveUrl, "_blank");
       });
     });
-  }
-
-  function downloadProject(file) {
-    const a = document.createElement("a");
-    a.href = file;
-    a.setAttribute("download", file.split("/").pop()); // Extract filename correctly
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
   }
 
   toggleBtn.addEventListener("click", function () {

@@ -1,36 +1,35 @@
 /* Footer Styling */
 
-
 .footer {
-    background-color: #000; /* Dark background */
-    padding: 15px 0;
-    text-align: center;
-    position: relative;
-  }
-  
-  /* Copyright Text */
-  .copyright {
-    color: #ffffff; /* Silver text */
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 1px;
-    position: relative;
-    display: inline-block;
-    padding: 5px 20px;
-    border-radius: 5px;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .copyright span {
-    color: #3BBEFF; /* Neon Blue for your name */
-    font-weight: 600;
-  }
-  
-  .copyright a{
-    text-decoration: none;
-    color: #3BBEFF; 
-  }
-  
+  background-color: #000; /* Dark background */
+  padding: 15px 0;
+  text-align: center;
+  position: relative;
+}
+
+/* Copyright Text */
+.copyright {
+  color: #ffffff; /* Silver text */
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.copyright span {
+  color: #3bbeff; /* Neon Blue for your name */
+  font-weight: 600;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: #3bbeff;
+}
+
 /* Scroll-to-Top Button */
 .scroll-top {
   position: fixed;
@@ -48,18 +47,18 @@
   align-items: center;
   justify-content: center;
   transition: 0.3s ease-in-out;
-  box-shadow: 0 0 20px #3BBEFF, 0 0 20px #3BBEFF;
+  box-shadow: 0 0 20px #3bbeff, 0 0 20px #3bbeff;
 }
 
 /* Hover Effect */
 .scroll-top:hover {
-color: #ffffff;
-background-color: #3BBEFF;
-box-shadow:  0 0 20px #005680, 0 0 20px #005f8e;
-transition-duration: 0.3s;
+  color: #ffffff;
+  background-color: #3bbeff;
+  box-shadow: 0 0 20px #005680, 0 0 20px #005f8e;
+  transition-duration: 0.3s;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .footer {
     height: auto;
     width: 100vw;
@@ -71,7 +70,7 @@ transition-duration: 0.3s;
     font-size: 1rem;
   }
 
-  .scroll-top{
-    margin-bottom: 3rem;
+  .scroll-top {
+    margin-bottom: 1rem;
   }
 }

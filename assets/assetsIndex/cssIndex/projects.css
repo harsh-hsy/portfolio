@@ -1,275 +1,251 @@
 /* Projects Page */
 
-.projects{
-    height: 90vh;
-    width: 100vw;
-    background-color: #000000;
+.projects {
+  height: 90vh;
+  width: 100vw;
+  background-color: #000000;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.projects-heading {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #000000;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 20px 8px;
+  overflow: auto; /* Scrollable to prevent overlapping */
+  max-height: 65vh;
+}
+
+.project {
+  width: 23%;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 24px;
+  border: 2px solid #005a87;
+  text-align: left;
+  color: #3bbeff;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  border: 2px solid #3bbeff;
+  box-shadow: 2px 2px 8px #005680, -2px -2px 8px #005f8e;
+}
+
+.project img {
+  height: 200px;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: scale-down;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.project-desc {
+  font-size: 0.75rem;
+  color: #c0c0c0;
+  max-height: 4.2em; /* Limits to 2 lines (1.4em per line) */
+  line-height: 1.4em; /* Adjust line spacing */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+  display: -webkit-box; /* Limits to 2 lines */
+  -webkit-box-orient: vertical;
+  margin-bottom: 1rem;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.btn-primary {
+  padding: 8px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  border: 2px solid #005a87;
+  background-color: #000000;
+  color: #3bbeff;
+  display: block;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  border: 2px solid #ffffff;
+  background-color: #3bbeff;
+  color: #ffffff;
+  box-shadow: 2px 2px 25px #005680, -2px -2px 25px #005f8e;
+  transition: 0.3s ease;
+}
+
+.btn {
+  display: block;
+  margin: 24px auto 0px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  cursor: pointer;
+  background-color: #000000;
+  color: #3bbeff;
+  border-radius: 25px;
+  border: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 2px 2px 16px #005680, -2px -2px 16px #005f8e;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #3bbeff;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 16px #005680, -2px -2px 16px #005f8e;
+}
+
+/* Width and background of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Adjust scrollbar width */
+}
+
+/* Track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #005a87; /* Dark background */
+  border-radius: 0px;
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #3bbeff; /* Blue handle */
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3bbeff; /* Lighter blue on hover */
+}
+
+@media screen and (max-width: 600px) {
+  ::-webkit-scrollbar {
+    display: none;
   }
-  
-  .projects-heading{
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    text-decoration: underline;
-    text-underline-offset: 0.3rem;
-    justify-content: center;
-    align-items: center;
+
+  body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
   }
-  
+
   .projects {
-    padding: 10px 0;
-    text-align: center;
+    width: 100vw;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
   }
-  
+
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #000000;
+    height: auto;
+    margin: 0px;
+    padding: 0px 16px;
   }
-  
+
   .projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 16px 0px 16px;
-    overflow: auto; /* Scrollable to prevent overlapping */
-    max-height: 65vh;
-  }
-  
-  .project {
-    width: 23%; /* 4 per row */
-    background-color: #000000;
-    padding: 20px;
-    border-radius: 24px;
-    border: 2px solid #005a87;
-    text-align: left;
-    color: #3BBEFF;
-    transition: transform 0.3s ease;
-  }
-  
-  .project:hover {
-    transform: scale(1.05);
-    border: 2px solid #3bbeff;
-    box-shadow:  2px 2px 25px #005680, -2px -2px 25px #005f8e;
-  }
-  
-  .project img {
-    height: 200px;
+    height: 60vh;
     width: 100%;
-    border-radius: 5px;
-    object-fit: scale-down;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0px 24px;
   }
-  
+
+  .project {
+    width: 90%;
+  }
+
   .project-title {
     font-size: 1rem;
-    font-weight: bold;
-    margin: 8px 0;
   }
-  
+
   .project-desc {
     font-size: 0.75rem;
-    color: #c0c0c0;
-    max-height: 4.2em; /* Limits to 2 lines (1.4em per line) */
-    line-height: 1.4em; /* Adjust line spacing */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: justify;
-    display: -webkit-box;/* Limits to 2 lines */
-    -webkit-box-orient: vertical;
   }
-  
-  .project-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
-  
-  .btn-primary,
-  .btn-secondary {
-    padding: 8px 12px;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 700;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-primary {
-    border: 2px solid #005a87;
-    background-color: #000000;
-    color: #3BBEFF;
-  }
-  
-  .btn-primary:hover {
-    border: 2px solid #ffffff;
-    background-color: #3BBEFF;
-    color: #ffffff;
-    box-shadow:  2px 2px 25px #005680, -2px -2px 25px #005f8e;
-    transition:  0.3s ease;
-  }
-  
-  .btn-secondary {
-    border: 2px solid #005a87;
-    background-color: #000000;
-    color: #3BBEFF;
-  }
-  
-  .btn-secondary:hover {
-    border: 2px solid #ffffff;
-    background-color: #3BBEFF;
-    color: #ffffff;
-    box-shadow:  2px 2px 25px #005680, -2px -2px 25px #005f8e;
-    transition:  0.3s ease;
-  }
-  
-  .btn {
+
+  #toggleProjects {
     display: block;
-    margin: 24px auto 0px;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 12px 20px;
-    cursor: pointer;
-    background-color: #000000;
-    color: #3bbeff;
-    border-radius: 25px;
-    border: none;
-    transition: background-color 0.3s ease;
-    box-shadow:  2px 2px 16px #005680, -2px -2px 16px #005f8e;
-    transition:  0.3s ease;
+    margin: 1rem auto 2rem;
   }
-  
-  .btn:hover {
-  
-    color: #ffffff;
-    background-color: #3bbeff;
-    transition-duration: 0.3s;
-    box-shadow:  2px 2px 25px #005680, -2px -2px 25px #005f8e;
-  }
-  
-  /* Width and background of the scrollbar */
+}
+
+@media screen and (max-width: 400px) {
   ::-webkit-scrollbar {
-    width: 10px; /* Adjust scrollbar width */
+    display: none;
   }
-  
-  /* Track (the background of the scrollbar) */
-  ::-webkit-scrollbar-track {
-    background: #005a87; /* Dark background */
-    border-radius: 0px;
-  }
-  
-  /* Handle (the draggable part) */
-  ::-webkit-scrollbar-thumb {
-    background: #3BBEFF; /* Blue handle */
-    border-radius: 5px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #3BBEFF; /* Lighter blue on hover */
-  }
-  
-  
-  
-  @media screen and (max-width: 480px) {
-  
-    ::-webkit-scrollbar {
-      display: none;
-    }
-  
-    body {
-      scrollbar-width: none; /* Firefox */
-      -ms-overflow-style: none; /* Internet Explorer/Edge */
-    }
-  
-    .projects{
-      width: 100vw;
-      height: auto;
-      padding: 0px;
-      margin: 0px;
-    }
-  
-    .container{
-      height: auto;
-      margin: 0px;
-      padding: 0px 16px;
-    }
-  
-    .projects-grid {
-      height: 80vh;   
-      width: 100%; 
-      display: flex;
-      flex-direction: column; 
-      align-items: center; 
-      gap: 2rem;
-      padding: 0px 24px;
-    }
-  
-    .project {
-      width: 90%;
-    }
 
-    .project-title{
-      font-size: 1rem;
-    }
-
-    .project-desc{
-      font-size: 0.75rem;
-    }
-  
-    #toggleProjects {
-      display: block;
-      margin: 1rem auto 2rem; 
-    }
+  body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
   }
-  
 
-  @media screen and (max-width: 375px) {
-  
-    ::-webkit-scrollbar {
-      display: none;
-    }
-  
-    body {
-      scrollbar-width: none; /* Firefox */
-      -ms-overflow-style: none; /* Internet Explorer/Edge */
-    }
-  
-    .projects{
-      width: 100vw;
-      height: auto;
-      padding: 0px ;
-      margin: 0px;
-    }
-  
-    .container{
-      height: auto;
-      width: 100vw;
-      margin: 0px;
-      padding: 0px 16px;
-    }
-  
-    .projects-grid {
-      height: 70vh;   
-      width: 100%; 
-      display: flex;
-      flex-direction: column; 
-      align-items: center; 
-      gap: 1rem;
-      padding: 0px 16px;
-    }
-  
-    .project {
-      width: 95%;
-    }
-
-    .project-title{
-      font-size: 1rem;
-    }
-
-    .project-desc{
-      font-size: 0.75rem;
-    }
-    
+  .projects {
+    width: 100vw;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
   }
-  
+
+  .container {
+    height: auto;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px 16px;
+  }
+
+  .projects-grid {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0px 16px;
+  }
+
+  .project {
+    width: 95%;
+  }
+
+  .project-title {
+    font-size: 1rem;
+  }
+
+  .project-desc {
+    font-size: 0.75rem;
+  }
+}

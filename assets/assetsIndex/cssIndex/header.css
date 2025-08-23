@@ -1,162 +1,162 @@
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0px 4px 6px rgba(0, 90, 135, 0.5);
-  }
-  
-  /* Header Navigation */
-  .header-list {
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 0 2rem;
-  }
-  
-  .header-list-text{
-    width: 60vw;
-  }
-  
-  .header-list-text p {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-left: 10rem;
-    color: #3bbeff;
-  }
-  
-  .header-list-link {
-    width: 40vw;
-    display: flex;
-  }
-  
-  .header-list-link li {
-    list-style: none;
-    margin: 0 2rem;
-  }
-  
-  .header-list-link a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #3bbeff;
-    transition: color 0.3s ease;
-  }
-  
-  .header-list-link a:hover {
-    color: #005a87;
-  }
-  
-  /* Hamburger Menu */
-  .hamburger {
-    cursor: pointer;
-    display: none;
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    transform: translateY(-50%);
-  }
-  
-  .hamburger input {
-    display: none;
-  }
-  
-  .hamburger svg {
-    height: 3em;
-    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .line {
-    fill: none;
-    stroke: #3bbeff;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 3;
-    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .line-top-bottom {
-    stroke-dasharray: 12 63;
-  }
-  
-  .hamburger input:checked + svg {
-    transform: rotate(-45deg);
-  }
-  
-  .hamburger input:checked + svg .line-top-bottom {
-    stroke-dasharray: 20 300;
-    stroke-dashoffset: -32.42;
-  }
-  
-  /* Responsive styles */
-  @media screen and (max-width: 480px) {
-  
-    header{
-      width: 100vw;
-      padding: 0px;
-      margin: 0px;
-    }
-  
-    .header-list {
-      width: auto;
-      margin: 0px;
-      padding: 0px 16px;
-      position: relative;
-    }
-  
-    .header-list-text p {
-      font-size: 2rem;
-      margin: 0px;
-      padding: 0px;
-    }
-  
-    .header-list-link {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 10vh;
-      right: 0;
-      width: 100%;
-      background: black;
-      text-align: center;
-      padding: 0px;
-    }
-  
-    .header-list-link li{
-      margin: 1rem 0;
-      font-size: 1.25rem;
-    }
-  
-    .hamburger {
-      font-size: 1rem;
-      width: 10%;
-      display: block;
-      margin-left: auto;
-      padding: 0px 0px 0px 0px;
-      justify-content: space-around;
-    }
-    .header-list-link.show { /* When menu is open */
-      display: flex;
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 90, 135, 0.5);
+}
+
+/* Header Navigation */
+.header-list {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 0 2rem;
+}
+
+.header-list-text {
+  width: 60vw;
+}
+
+.header-list-text p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-left: 10rem;
+  color: #3bbeff;
+}
+
+.header-list-link {
+  width: 40vw;
+  display: flex;
+}
+
+.header-list-link li {
+  list-style: none;
+  margin: 0 2rem;
+}
+
+.header-list-link a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #3bbeff;
+  transition: color 0.3s ease;
+}
+
+.header-list-link a:hover {
+  color: #005a87;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  height: 3em;
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: #3bbeff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  header {
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
   }
 
-  @media (max-width: 375px) {
-    
-    header{
-      width: 100vw;
-      padding: 0px;
-      margin: 0px;
-    }
-  
-    .header-list-text p {
-      padding: 0px 0px 0px 0px;
-      justify-content: space-around;
-    }
-    .header-list-link.show { /* When menu is open */
-      display: flex;
-    }
+  .header-list {
+    width: auto;
+    margin: 0px;
+    padding: 0px 16px;
+    position: relative;
   }
+
+  .header-list-text p {
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .header-list-link {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 100%;
+    background: black;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .header-list-link li {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+  }
+
+  .hamburger {
+    font-size: 1rem;
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    padding: 0px 0px 0px 0px;
+    justify-content: space-around;
+  }
+  .header-list-link.show {
+    /* When menu is open */
+    display: flex;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .header-list-text p {
+    padding: 0px 0px 0px 0px;
+    justify-content: space-around;
+  }
+  .header-list-link.show {
+    /* When menu is open */
+    display: flex;
+  }
+}
