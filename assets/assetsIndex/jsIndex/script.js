@@ -79,6 +79,16 @@ function initProjectsSection() {
     },
     {
       imgs: [
+        "assets/assetsIndex/imagesIndex/typrush/typrush-1.png",
+        "assets/assetsIndex/imagesIndex/typrush/typrush-2.png",
+        "assets/assetsIndex/imagesIndex/typrush/typrush-3.png",
+      ],
+      title: "TypRush – Test Your Typing Speed Online",
+      desc: "Achieve typing excellence with TypeRush — simple, professional, and sound-powered.",
+      live: "https://typrush.netlify.app/",
+    },
+    {
+      imgs: [
         "assets/assetsIndex/imagesIndex/drive-link-generator/drive-link-generator-1.png",
         "assets/assetsIndex/imagesIndex/drive-link-generator/drive-link-generator-2.png",
         "assets/assetsIndex/imagesIndex/drive-link-generator/drive-link-generator-3.png",
@@ -93,8 +103,8 @@ function initProjectsSection() {
         "assets/assetsIndex/imagesIndex/freshcart/freshcart-2.png",
         "assets/assetsIndex/imagesIndex/freshcart/freshcart-3.png",
       ],
-      title: " FreshCart – Grocery",
-      desc: "Responsive grocery website clone using HTML, CSS, JS. Clean design with product sections and mobile-friendly layout.",
+      title: "FreshCart – Frontend Shopping Experience",
+      desc: "Responsive grocery website frontend built with HTML, CSS, and JS — clean design and mobile-ready.",
       live: "https://codewithharshsingh-freshcart.netlify.app/",
     },
     {
@@ -106,16 +116,6 @@ function initProjectsSection() {
       title: "Weather App",
       desc: "Live weather app with light/dark theme, using OpenWeatherMap API and responsive design.",
       live: "https://codewithharshsingh-weather-app.netlify.app/",
-    },
-    {
-      imgs: [
-        "assets/assetsIndex/imagesIndex/typing-speed-test/typing-speed-test-1.png",
-        "assets/assetsIndex/imagesIndex/typing-speed-test/typing-speed-test-2.png",
-        "assets/assetsIndex/imagesIndex/typing-speed-test/typing-speed-test-3.png",
-      ],
-      title: " Typing Speed Test",
-      desc: "Responsive typing test website using HTML, CSS, JS. Tracks WPM and accuracy in real time with a clean UI.",
-      live: "https://codewithharshsingh-typing-speed-test.netlify.app/",
     },
     {
       imgs: [
