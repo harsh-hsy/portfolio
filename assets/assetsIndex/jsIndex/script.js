@@ -89,13 +89,13 @@ function initProjectsSection() {
     },
     {
       imgs: [
-        "assets/assetsIndex/imagesIndex/drive-link-generator/drive-link-generator-1.png",
-        "assets/assetsIndex/imagesIndex/drive-link-generator/drive-link-generator-2.png",
-        "assets/assetsIndex/imagesIndex/drive-link-generator/drive-link-generator-3.png",
+        "assets/assetsIndex/imagesIndex/quickdrivelink/quickdrivelink-1.png",
+        "assets/assetsIndex/imagesIndex/quickdrivelink/quickdrivelink-2.png",
+        "assets/assetsIndex/imagesIndex/quickdrivelink/quickdrivelink-3.png",
       ],
-      title: "Google Drive Direct Download Link Generator",
-      desc: "Quickly turn any Google Drive share link into an instant direct download link — fast, private, and hassle-free.",
-      live: "https://drive-link-generator.netlify.app/",
+      title: "QuickDriveLink – Instant Google Drive Links",
+      desc: "Generate instant direct download links from Google Drive — fast, private, and hassle-free.",
+      live: "https://quickdrivelink.netlify.app/",
     },
     {
       imgs: [
