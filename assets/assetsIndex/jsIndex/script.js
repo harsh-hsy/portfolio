@@ -31,7 +31,7 @@ function initTypingEffect() {
   const typingElement = document.getElementById("typing-effect");
   if (!typingElement) return;
 
-  const texts = ["A Web Designer.", "A Frontend Developer.", "A Video Editor."];
+  const texts = ["A Frontend Developer.", "A React.js Developer.", "A Web Designer."];
   let textIndex = 0;
   let charIndex = 0;
 
