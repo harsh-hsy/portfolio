@@ -69,9 +69,9 @@ function initProjectsSection() {
   const projects = [
     {
       imgs: [
-        "assets/assetsIndex/imagesIndex/qr-fusion/qrfusion-1.png",
-        "assets/assetsIndex/imagesIndex/qr-fusion/qrfusion-2.png",
-        "assets/assetsIndex/imagesIndex/qr-fusion/qrfusion-3.png",
+        "assets/images/qr-fusion/qrfusion-1.png",
+        "assets/images/qr-fusion/qrfusion-2.png",
+        "assets/images/qr-fusion/qrfusion-3.png",
       ],
       title: "QR Fusion - Free & Advanced QR Code Generator",
       desc: "Generate, customize, and download professional QR codes instantly — free, private, and hassle-free.",
@@ -79,9 +79,9 @@ function initProjectsSection() {
     },
     {
       imgs: [
-        "assets/assetsIndex/imagesIndex/typrush/typrush-1.png",
-        "assets/assetsIndex/imagesIndex/typrush/typrush-2.png",
-        "assets/assetsIndex/imagesIndex/typrush/typrush-3.png",
+        "assets/images/typrush/typrush-1.png",
+        "assets/images/typrush/typrush-2.png",
+        "assets/images/typrush/typrush-3.png",
       ],
       title: "TypRush – Test Your Typing Speed Online",
       desc: "Achieve typing excellence with TypeRush — simple, professional, and sound-powered.",
@@ -89,9 +89,9 @@ function initProjectsSection() {
     },
     {
       imgs: [
-        "assets/assetsIndex/imagesIndex/quickdrivelink/quickdrivelink-1.png",
-        "assets/assetsIndex/imagesIndex/quickdrivelink/quickdrivelink-2.png",
-        "assets/assetsIndex/imagesIndex/quickdrivelink/quickdrivelink-3.png",
+        "assets/images/quickdrivelink/quickdrivelink-1.png",
+        "assets/images/quickdrivelink/quickdrivelink-2.png",
+        "assets/images/quickdrivelink/quickdrivelink-3.png",
       ],
       title: "QuickDriveLink – Instant Google Drive Links",
       desc: "Generate instant direct download links from Google Drive — fast, private, and hassle-free.",
@@ -99,9 +99,9 @@ function initProjectsSection() {
     },
     {
       imgs: [
-        "assets/assetsIndex/imagesIndex/freshcart/freshcart-1.png",
-        "assets/assetsIndex/imagesIndex/freshcart/freshcart-2.png",
-        "assets/assetsIndex/imagesIndex/freshcart/freshcart-3.png",
+        "assets/images/freshcart/freshcart-1.png",
+        "assets/images/freshcart/freshcart-2.png",
+        "assets/images/freshcart/freshcart-3.png",
       ],
       title: "FreshCart – Frontend Shopping Experience",
       desc: "Responsive grocery website frontend built with HTML, CSS, and JS — clean design and mobile-ready.",
@@ -109,9 +109,9 @@ function initProjectsSection() {
     },
     {
       imgs: [
-        "assets/assetsIndex/imagesIndex/weather-app/weather-app-1.png",
-        "assets/assetsIndex/imagesIndex/weather-app/weather-app-2.png",
-        "assets/assetsIndex/imagesIndex/weather-app/weather-app-3.png",
+        "assets/images/weather-app/weather-app-1.png",
+        "assets/images/weather-app/weather-app-2.png",
+        "assets/images/weather-app/weather-app-3.png",
       ],
       title: "Weather App",
       desc: "Live weather app with light/dark theme, using OpenWeatherMap API and responsive design.",
@@ -119,9 +119,9 @@ function initProjectsSection() {
     },
     {
       imgs: [
-        "assets/assetsIndex/imagesIndex/calculator/calculator-1.png",
-        "assets/assetsIndex/imagesIndex/calculator/calculator-2.png",
-        "assets/assetsIndex/imagesIndex/calculator/calculator-3.png",
+        "assets/images/calculator/calculator-1.png",
+        "assets/images/calculator/calculator-2.png",
+        "assets/images/calculator/calculator-3.png",
       ],
       title: "Calculator",
       desc: "A simple, responsive calculator built with HTML, CSS, and JavaScript for basic arithmetic operations.",
